@@ -1,0 +1,10 @@
+Develop web page on html, css and pure javascript (you cannot use any libraries)
+webpage should have a todolist functionality
+1. UI to list all TODOs
+2. UI to add new TODO
+3. UI to remove TODO
+4. UI to edit TODO
+5. TODO has only one field of text type with possible length in 20 symbols
+OPTIONAL
+6. implement sorting functionality
+7. implement search functionality

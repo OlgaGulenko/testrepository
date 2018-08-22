@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+html, body{
+    padding: 0;
+    margin: 0 0 0 0;
+    background: #81f643;
+    background: -webkit-linear-gradient(to right, #81f643, #d44378);
+    background: linear-gradient(to right, #81f643, #d44378);
+}
+
+header {
+    text-align: center;
+    font-size: 40px;
+    color: rgba(255,255,255,1);
+    padding: 20px 0;
+}
+input[type = text], .input {
+    border: 1px solid rgba(255,255,255,0.6);
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 5px;
+    width: 500px;
+    padding: 15px;
+    outline: 0;
+}
+.task {
+    border: 1px solid rgba(0,0,0,0.6);
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color:rgba(255,255,255,0.8);
+}
+#list .todo h2{
+    text-transform: uppercase;
+}
+
+.large{
+    width: 500px;
+}
+.small{
+    width: 150px;
+}
+.checkBox{
+    float: right;
+    height: 25px;
+    width: 25px;
+    margin-top: -75px;
+}
+.inputBlock {
+    width: 800px;
+    position: relative;
+    flex-direction: column;
+    margin: auto;
+}
+.item{
+    display: block;
+    width: 500px;
+
+    position: relative;
+    text-align: center;
+
+}
+button, input[type = button]{
+    color: rgba(0,0,0,1);
+    border: none;
+    border-radius: 5px;
+    background: whitesmoke;
+    font-size: 20px;
+    width: 120px;
+    padding:12px;
+
+}
+
+button:hover, input[type = button]:hover {
+    background: #d6d6d6;
+}
+
+.editblock {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.task h1{
+    width: 90%;
+}
+
+.dapperblock {
+    background-color: rgba(65, 0, 119, 0.5);
+}
+
+#list button{
+    margin-right: 5px;
+}
+#list button:last-child{
+    margin-right: 0;
+}
+#reverseButton{
+    margin-top:20px;
+}
