@@ -147,4 +147,12 @@ function searchTask() {
 // }
 searchBtn.addEventListener('click', searchTask);
 
+function compareName(taskA, taskB) {
+    return taskA.text.localeCompare(taskB.text);
+}
+todoList.sort(compareName);
 
+for(var i = 0; i < todoList.length; i++) {
+    alert(todoList[i].text);
+
+}

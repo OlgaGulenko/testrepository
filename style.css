@@ -9,23 +9,27 @@ html, body{
 }
 
 header {
+    padding: 20px 0;
     text-align: center;
     font-size: 40px;
     color: rgba(255,255,255,1);
-    padding: 20px 0;
 }
+
 input[type = text], .input {
+    width: 500px;
+    height: 40px;
+    padding: 0 15px;
+    margin: 10px;
     border: 1px solid rgba(255,255,255,0.6);
     background-color: rgba(255,255,255,0.5);
     border-radius: 5px;
-    width: 500px;
-    padding: 15px;
     outline: 0;
 }
+
 .task {
-    border: 1px solid rgba(0,0,0,0.6);
     padding: 10px;
     margin-bottom: 10px;
+    border: 1px solid rgba(0,0,0,0.6);
     background-color:rgba(255,255,255,0.8);
 }
 #list .todo h2{
@@ -36,7 +40,7 @@ input[type = text], .input {
     width: 500px;
 }
 .small{
-    width: 150px;
+    width: 120px;
 }
 .checkBox{
     float: right;
@@ -45,28 +49,26 @@ input[type = text], .input {
     margin-top: -75px;
 }
 .inputBlock {
-    width: 800px;
     position: relative;
-    flex-direction: column;
+    width: 800px;
     margin: auto;
+    flex-direction: column;
 }
 .item{
+    position: relative;
     display: block;
     width: 500px;
-
-    position: relative;
     text-align: center;
-
 }
 button, input[type = button]{
+    width: 120px;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 14px;
     color: rgba(0,0,0,1);
-    border: none;
+    border: 1px solid rgba(255,255,255,0.6);
     border-radius: 5px;
     background: whitesmoke;
-    font-size: 20px;
-    width: 120px;
-    padding:12px;
-
 }
 
 button:hover, input[type = button]:hover {
@@ -74,8 +76,8 @@ button:hover, input[type = button]:hover {
 }
 
 .editblock {
-    padding: 10px;
     display: flex;
+    padding: 10px;
     flex-direction: row;
 }
 .task h1{
@@ -86,12 +88,48 @@ button:hover, input[type = button]:hover {
     background-color: rgba(65, 0, 119, 0.5);
 }
 
+#list {
+    position: absolute;
+    top: 190px;
+    left: 12px;
+    width: 642px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 #list button{
+    height: 25px;
+    width: 70px;
     margin-right: 5px;
 }
 #list button:last-child{
     margin-right: 0;
 }
 #reverseButton{
-    margin-top:20px;
+    position: absolute;
+    top: 133px;
+    left: 280px;
+    z-index: 2;
+}
+
+.line {
+    float: left;
+    width: 200px;
+    height: 1px;
+    margin-left: 40px;
+    margin-top: 30px;
+    border: none;
+    background-color: whitesmoke;
+}
+.line.second {
+    float: right;
+    margin-right: 150px;
+}
+
+.edit input {
+    margin-left: 0;
+}
+#list .edit button {
+    height: 40px;
 }
